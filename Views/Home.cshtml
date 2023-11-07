@@ -1,0 +1,23 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<h1>Vite + ASP.NET + TypeScript + Umbraco</h1>
+<a href="https://vitejs.dev" target="_blank">
+	<img src="~/vite.svg" class="logo" alt="Vite logo" />
+</a>
+<a href="https://dotnet.microsoft.com/" target="_blank">
+	<img src="~/dotnet.svg" class="logo" alt="Dotnet logo" />
+</a>
+<a href="https://www.typescriptlang.org/" target="_blank">
+	<img src="~/typescript.svg" class="logo vanilla" alt="TypeScript logo" />
+</a>
+<div class="card">
+	<button id="counter" type="button"></button>
+</div>
+
+@Model.Value("content")
